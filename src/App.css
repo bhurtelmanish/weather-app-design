@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Finlandica&family=Fira+Sans:wght@200;300;400&family=Geologica:wght@100;200;300;400;500&family=Grenze+Gotisch&family=Hubballi&family=Inter:wght@500&family=Lato&family=Lobster&family=Lobster+Two:wght@700&family=Manrope:wght@300&family=Martel&family=Noto+Sans&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&family=Oswald:wght@200;300;400&family=Poppins:wght@200;300;500&family=Quicksand&family=Raleway:ital,wght@0,200;0,300;0,400;0,800;1,700&family=Roboto:wght@100;300;400;700&family=Sansita+Swashed:wght@300&family=Wix+Madefor+Display:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  transition: all 0.2s ease;
+}
+
+:root{
+  --componentBackground: rgb(32, 43, 59);
+  --bodyBackground: rgb(11, 19, 30);
+  --textColor: rgb(240, 240, 242);
+  --hoverComponent: rgb(53, 64, 80);
+  --rounded: 1rem;
+}
+
+body{
+  overflow-x: hidden !important;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+input[type="search"]::-webkit-search-cancel-button{
+  display: none;
+}
+
+
+
+
+/* Responsive Design */
+
+.fa-bars-staggered{
+  display: none;
+  position: absolute;
+}
+
+@media (max-width: 1040px) {
+  .week-forecast{
+    width: 20rem;
+    
+  }
+}
+
+@media (max-width: 920px) {
+  .week-forecast{
+    display: none !important;
+  }
+  .fa-bars-staggered{
+    display: block;
+  }
+  .hidden{
+    display: none !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .weather-data{
+    padding: 0 1rem 0 1rem !important;
+  }
+  .weather-data-image{
+    height: 5rem !important;
+  }
+  .dashboard-links{
+    display: none !important;
+  }
+  .fa-cloud , .fa-city , .fa-map{
+    font-size:1.6rem !important;
+  }
+  .dashboard{
+    width:5rem !important;
+  }
+  .whole-container{
+    padding: 1.5rem 0.8rem 0.8rem 0.8rem!important;
+  }
+  .links-container > li{
+    height: 3rem !important;
+    width: 3.4rem !important;
+  }
+  .todayForecast-container{
+    justify-content: center !important;
+  }
+  .todayForecast-heading , .air-condition-heading{
+    text-align: center !important;
+  }
+}
+@media (max-width: 420px) {
+  .weather-data{
+    padding: 0 1rem 0 1rem !important;
+  }
+  .weather-data-image{
+    height: 5rem !important;
+  }
+  .todayForecast-container{
+    gap:1.7rem !important;
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+  .forecast-card{
+    gap:0.3rem  !important;
+  }
+  .air-condition-container{
+    padding:1rem 0rem 1rem 0rem !important;
+  }
+}
